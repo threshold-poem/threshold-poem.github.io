@@ -1,7 +1,5 @@
 import React from 'react';
 import Button from '../../ui/Button/Button';
-import { AwesomeButton } from "react-awesome-button";
-import "react-awesome-button/dist/styles.css";
 
 export default function HomePage() {
   return (
@@ -51,15 +49,7 @@ export default function HomePage() {
       </body>
 
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <AwesomeButtonProgress
-        cssModule={AwesomeButtonStyles}
-        type="primary"
-        onPress={next => {
-          // do a sync/async task then call `next()`
-        }}
-      >
-        Button
-      </AwesomeButtonProgress>
+        <Button theme="blue">Click me!!</Button>
       </div>
     </div>
   );
