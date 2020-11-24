@@ -37,7 +37,7 @@ export default function HomePage() {
         THRESHOLD - Ryan Cook
       </h1>
       <body style={{fontSize: 12, textAlign: 'center'}}>
-        <pre>
+        <pre style = {{fontSize: 11.5, fontFamily: 'Arial'}}>
         ````````````...........,,,,,,,,.,,,,,,<br />
         `````````.......... ....,,,,,,,,,,,,,,<br />
         ````````. ....  .  .    ..,,,,,,,,,,,,<br />
@@ -49,9 +49,9 @@ export default function HomePage() {
         ````  . . .++d8+%'..  `%\++++. . . ,,,<br />
         ```.  . . .++H+%' ... `%A+++++.'. .,,,<br />
         ``.  . . .+++H8%'.A%%. %|Hb++++.'.  .,<br />
-        ` .  . . .+++"%;.%<Button onClick={() => {
+        ` .  . . .+++"%;.%%<Button onClick={() => {
                         showID("pf");
-                      }}id="c">*</Button>%%%.%|8Hb++.'.'.  .<br />
+                      }}id="c">*</Button>%%.%|8Hb++.'.'.  .<br />
         ` .  . . .+++,'%% :.`%%;;.Nb+.'.'.  .,<br />
         `.  . . .++,'%%'..| ..`%%:F++.'.'.  .,<br />
         `.  . . .,'%%'..  A   ..`%%:+.'.'.  .,<br />
