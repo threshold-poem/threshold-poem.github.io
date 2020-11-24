@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../ui/Button/Button';
+import "./main.css"
 
 export default function HomePage() {
   function doScrolling(elementY, duration) { 
@@ -51,7 +52,7 @@ export default function HomePage() {
         ``.  . . .+++H8%'.A%%. %|Hb++++.'.  .,<br />
         ` .  . . .+++"%;.%%<Button onClick={() => {
                         showID("pf");
-                      }}id="c">*</Button>%%.%|8Hb++.'.'.  .<br />
+                      }}id="c">*</Button> %%.%|8Hb++.'.'.  .<br />
         ` .  . . .+++,'%% :.`%%;;.Nb+.'.'.  .,<br />
         `.  . . .++,'%%'..| ..`%%:F++.'.'.  .,<br />
         `.  . . .,'%%'..  A   ..`%%:+.'.'.  .,<br />
@@ -81,7 +82,7 @@ export default function HomePage() {
       <div hidden id="pf" style={{textAlign: 'center',paddingLeft:'25%', paddingRight: '25%'}}>
         <h1>PREFACE</h1>
         <h2>1</h2>
-        <h4>Palimpsest; /ˈpaləm(p)ˌsest/; 01010000 01100001 01101100 01101001 01101101 01110000 01110011 01100101 01110011 01110100; writing material (such as a parchment or tablet) used one or more times after earlier writing has been erased. The erasing process wasn't completely </h4>
+        <h4>Palimpsest; /ˈpaləm(p)ˌsest/; <prep className="codeText">01010000 01100001 01101100 01101001 01101101 01110000 01110011 01100101 01110011 01110100 </prep>; writing material (such as a parchment or tablet) used one or more times after earlier writing has been erased. The erasing process wasn't completely </h4>
         <h4 style={{textAlign: 'left', paddingLeft:'25%'}}>
           <pre>
           <div style={{paddingLeft:'15%'}}>Effective</div>
@@ -133,7 +134,7 @@ under the newer writing.<br />
         <h2>6</h2>
         <i>“The modern binary number system goes back to Gottfried Leibniz who in the 17th century proposed and developed it in his article Explication de l'Arithmétique Binaire.  Leibniz invented the system around 1679 but he published it in 1703. He already used symbols 0 and 1’s. . Simon Marquis de Laplace wrote of this creation saying : Laibnitz saw in his binary arithmetic the image of Creation ... . He imaginated that Unity represents God, and Zero the Void, that the Supreme Being drew all beings from the void, just as unity and zero express all numbers in his system of numeration.”</i>
         <p>-https://www.cs.cas.cz/portal/AlgoMath/NumberTheory/Arithmetics/NumeralSystems/PositionalNumeralSystems/BinarySystem.htm#:~:text=The%20modern%20binary%20number%20system,used%20symbols%200%20and%201.</p>
-        <h4>The only problem is Leibiz never invented a two number mathematical system, both Egypt and China were using it long before he was even an idea in his mother’s 01110111 01101111 01101101 01100010 </h4>
+        <h4>The only problem is Leibiz never invented a two number mathematical system, both Egypt and China were using it long before he was even an idea in his mother’s <prep className="codeText">01110111 01101111 01101101 01100010</prep> </h4>
        <pre style = {{fontSize: 11.5, fontFamily: 'Arial'}}>
         ………………………………………._¸„„„„_ <Button onClick={() => {
                         showID("7");
@@ -172,21 +173,21 @@ under the newer writing.<br />
           <p><span >born to dissent&nbsp;</span></p>
           <p><span >Lovely wine-stained picnic interrupted&mdash;</span></p>
           <p><span >Gender revealed in a mouth of ash</span></p>
-          <p><span >It&rsquo;s a 01100010 01101111 01111001 00100000 00001010 (That will be 759 plus tax)</span></p>
+          <p><span >It&rsquo;s a <prep className="codeText">01100010 01101111 01111001 00100000 00001010</prep> (That will be 759 plus tax)</span></p>
           <p>&nbsp;</p>
           <p><span >Gate II</span></p>
           <p><span >No,&nbsp;</span></p>
-          <p><span >I 01100011 01100001 01101110 01101110 01101111 01110100&nbsp; 00100000 00001010</span></p>
+          <p><span >I <prep className="codeText">01100011 01100001 01101110 01101110 01101111 01110100&nbsp; 00100000 00001010</prep></span></p>
           <p>&nbsp;</p>
           <p><span >think about it now, I have to keep going.</span></p>
           <p><br /><br /></p>
           <p><span >Gate III.</span></p>
           <p>&nbsp;</p>
           <p><span >&nbsp;I seduced with the spaces between.</span></p>
-          <p><span >&nbsp;&nbsp;01101000 01100001 01101110 01100100 makes me feel 01101000 01100001 01110010 01100100&nbsp; 00100000 00001010 when you touch&nbsp; 01101101 01111001 00100000 01101110 01100101 01100011 01101011 00100000 00001010&nbsp; .</span></p>
+          <p><span >&nbsp;&nbsp;<prep className="codeText">01101000 01100001 01101110 01100100</prep> makes me feel <prep className="codeText">01101000 01100001 01110010 01100100&nbsp; 00100000 00001010</prep> when you touch&nbsp; 01101101 01111001 00100000 01101110 01100101 01100011 01101011 00100000 00001010&nbsp; .</span></p>
           <p><br /><br /></p>
-          <p><span >I cannot tell if 01110011 01101000 01100101 liked me or how much she could 01100011 01100001 01100111 01100101 00001010 00001010 into me.Digging up clay and hair and lead. Filling my</span></p>
-          <p><span >&nbsp;01100010 01101111 01100100 01111001 00001010 00001010 00001010 00001010 00001010</span></p>
+          <p><span >I cannot tell if <prep className="codeText">01110011 01101000 01100101</prep> liked me or how much she could <prep className="codeText">01100011 01100001 01100111 01100101 00001010 00001010</prep> into me.Digging up clay and hair and lead. Filling my</span></p>
+          <p><span >&nbsp;<prep className="codeText">01100010 01101111 01100100 01111001 00001010 00001010 00001010 00001010 00001010</prep></span></p>
           <p><span >&nbsp;up as she would the flask that brings you back.&nbsp;</span></p>
           <p>&nbsp;</p>
           <p><span >Gate IV</span></p>
@@ -194,21 +195,60 @@ under the newer writing.<br />
           <p><span >Tastes a lot like cheap gin.&nbsp;</span></p>
           <p><br /><br /><br /><br /></p>
           <p><span >Gate V</span></p>
-          <p><span >I do not know why you got trapped for&nbsp; 00001010&nbsp; 01101000 01101001 01101101, The dawn doesn&rsquo;t debate the ethics of breaking.</span></p>
+          <p><span >I do not know why you got trapped for&nbsp; <prep className="codeText">00001010&nbsp; 01101000 01101001 01101101</prep>, The dawn doesn&rsquo;t debate the ethics of breaking.</span></p>
           <p><br /><br /></p>
           <p><span >Get your clothes back on.</span></p>
           <p><br /><br /><br /><br /></p>
           <p><span >Gate VI</span></p>
           <p><span >&nbsp;Erishkegal said:&nbsp;</span></p>
           <p>&nbsp;</p>
-          <p><span >00100000 00100000 01111001 01101111 01110101 00001010 00100000 01110111 01101001 01101100 01101100 00100000 </span><strong><em>The</em></strong> <span >&nbsp;00001010 01100001 01101100 01110111 01100001 01111001 01110011 00001010 00100000 01100010 01100101 00001010 </span><strong><em>sweepings</em></strong><span > 00100000 01100001 00100000 01100111 01110101 01111001 00100000 00001010 01101001 01101110 00100000 01100001 </span><strong><em>of the</em></strong> <span >&nbsp;00100000</span></p>
-          <p><span >&nbsp;01100100 01110010 </span> <span >01100101 01110011 01110011 00101100 00100000 </span><strong><em>gutter</em></strong> <span >00001010 01111001 01101111 01110101 00001010 00100000 01110011 01101001 01101100 01101100 01111001&nbsp; </span><strong><em>of the </em></strong><span >00001010 00100000 01101100 01101001 01110100 01110100 01101100 01100101 00001010 00100000 01100110 01100001 01100111 01100111 01101111&nbsp;</span></p>
-          <p><span >01110100 00001010 00100000 01110100 01110010 01111001 </span><strong><em>city</em></strong><span > 01101001 01101110 01100111 00100000 00001010</span> <span > 01110100 01101111 00100000 01110100 01110010 01101001 01100011&nbsp; </span><strong><em>be thy</em></strong> <span >01101011 00100000 01101101 01100101 00101100 00001010 00100000 01001001 00100000 01101000 01101111 01110000 01100101 00001010 00100000 01111001 01101111 01110101 00001010 00100000 01100100 01101001 01100101 00100000</span> <span > 00001010 01110011 01101100 01101111 </span> <span >01110111 01101100 01111001 00101110 00001010 00100000 01011001 01101111 01110101 00001010 00100000 01100010 01100101 </span><strong><em>food</em></strong><span > 01110100 01110100 01100101 01110010 00001010 00100000 01101110 01101111 01110100 00001010 00100000 01100011 01101111 01101101 01100101 00001010 00100000 01100010 01100001 01100011 01101011 00001010 00100000 01101000 01100101 01110010 01100101 00100000 00001010 00100000 01100001 01100111 01100001 01101001 01101110 00001010 00100000 01110111 01101001 01110100 01101000 00100000 00001010 01110100 01101000 01100001 01110100 00100000 00001010 01110011 01101000 01101001 01110100 00101110 00100000</span></p>
+          <p><span ><prep className="codeText">00100000 00100000 01111001 01101111 01110101 00001010 00100000 01110111 01101001 01101100 01101100 00100000 </prep></span><strong><em>The</em></strong> <span >&nbsp;<prep className="codeText">00001010 01100001 01101100 01110111 01100001 01111001 01110011 00001010 00100000 01100010 01100101 00001010</prep></span><strong><em>sweepings</em></strong><span > <prep className="codeText">00100000 01100001 00100000 01100111 01110101 01111001 00100000 00001010 01101001 01101110 00100000 01100001 </prep></span><strong><em>of the</em></strong> <span >&nbsp;<prep className="codeText">00100000</prep></span></p>
+          <p><span >&nbsp;<prep className="codeText">01100100 01110010 </prep></span> <span ><prep className="codeText">01100101 01110011 01110011 00101100 00100000 </prep></span><strong><em>gutter</em></strong> <span ><prep className="codeText"> 00001010 01111001 01101111 01110101 00001010 00100000 01110011 01101001 01101100 01101100 01111001&nbsp; </prep></span><strong><em>of the </em></strong><span ><prep className="codeText">00001010 00100000 01101100 01101001 01110100 01110100 01101100 01100101 00001010 00100000 01100110 01100001 01100111 01100111 01101111&nbsp;</prep></span></p>
+          <p><span ><prep className="codeText">01110100 00001010 00100000 01110100 01110010 01111001 </prep></span><strong><em>city</em></strong><span ><prep className="codeText"> 01101001 01101110 01100111 00100000 00001010</prep></span> <span > <prep className="codeText">01110100 01101111 00100000 01110100 01110010 01101001 01100011&nbsp; </prep></span><strong><em>be thy</em></strong> <span ><prep className="codeText"> 01101011 00100000 01101101 01100101 00101100 00001010 00100000 01001001 00100000 01101000 01101111 01110000 01100101 00001010 00100000 01111001 01101111 01110101 00001010 00100000 01100100 01101001 01100101 00100000</prep></span> <span ><prep className="codeText"> 00001010 01110011 01101100 01101111</prep> </span> <span ><prep className="codeText"> 01110111 01101100 01111001 00101110 00001010 00100000 01011001 01101111 01110101 00001010 00100000 01100010 01100101</prep> </span><strong><em>food</em></strong><span ><prep className="codeText"> 01110100 01110100 01100101 01110010 00001010 00100000 01101110 01101111 01110100 00001010 00100000 01100011 01101111 01101101 01100101 00001010 00100000 01100010 01100001 01100011 01101011 00001010 00100000 01101000 01100101 01110010 01100101 00100000 00001010 00100000 01100001 01100111 01100001 01101001 01101110 00001010 00100000 01110111 01101001 01110100 01101000 00100000 00001010 01110100 01101000 01100001 01110100 00100000 00001010 01110011 01101000 01101001 01110100 00101110 00100000</prep> </span></p>
           <p><em><span >&ldquo;The sweepings of the gutter of the city be thy food.</span></em></p>
           <p><em><span >&nbsp;The drains of the city be thy drink. The shadow of the wall be thy abode&rdquo;</span></em></p>
-          <p><em><span >01111001 </span></em><strong><em>The</em></strong><em><span > 01101111 01110101 00001010 00100000 01100001 01110010 01100101 01101110 00100111 01110100 00001010 00100000 </span></em> <em><span >01100101 01110110 </span></em><strong><em>drains</em></strong><em><span > 01100101 01101110 00001010 00100000 01100001 00100000&nbsp; </span></em><strong><em>of the</em></strong><em><span > 00001010 01110010 01100101 01100001 01101100 00001010 00100000 01100111 01101001 01110010 </span></em><strong><em>city</em></strong><em><span > 01101100 00101100 00001010 00001010 01111001 01101111 01110101 00100000 00001010 01100110 01100001 </span></em><strong><em>be thy</em></strong><em><span >&nbsp; 01101011 01100101 00001010 01111001 </span></em><strong><em>drink</em></strong><em><span > 01101111 01110101 01110010 000010</span></em> <em><span >10 01101100&nbsp; </span></em><strong><em>The</em></strong><em><span > 01101111 01101111 01101011 01110011 </span></em> <em><span >00001010 01110100 01101111 00001010 01100111 01100101&nbsp; </span></em><strong><em>shadow</em></strong><em><span > 01110100 00001010 01100001 01110100 01110100 01100101 01101110 01110100 01101001 01101111 01101110&nbsp; </span></em><strong><em>of the</em></strong><em><span > 00101110 00001010 </span></em><strong><em>wall</em></strong><em><span > 01000001 00001010 01110000 01101111 01110011 01100101 01110010 00001010 01100001 00001010 01110100&nbsp; </span></em><strong><em>be thy</em></strong><em><span > 01110010 01100101 01101110 01100100 01100101</span></em> <em><span > 01110010 00001010 </span></em><strong><em>abode</em></strong><em><span > 01100111 01101111 00001010 01100100 01101001 01100101 00100000 00001010 01100001 01101100 01101111 01101110 01100101 00101110</span></em></p>
+          <p><em><span ><prep className="codeText">01111001 </prep></span></em><strong><em>The</em></strong><em><span ><prep className="codeText"> 01101111 01110101 00001010 00100000 01100001 01110010 01100101 01101110 00100111 01110100 00001010 00100000</prep> </span></em> <em><span ><prep className="codeText">01100101 01110110</prep> </span></em><strong><em>drains</em></strong><em><span ><prep className="codeText"> 01100101 01101110 00001010 00100000 01100001 00100000&nbsp;</prep> </span></em><strong><em>of the</em></strong><em><span ><prep className="codeText"> 00001010 01110010 01100101 01100001 01101100 00001010 00100000 01100111 01101001 01110010</prep> </span></em><strong><em>city</em></strong><em><span ><prep className="codeText"> 01101100 00101100 00001010 00001010 01111001 01101111 01110101 00100000 00001010 01100110 01100001</prep> </span></em><strong><em>be thy</em></strong><em><span >&nbsp;<prep className="codeText"> 01101011 01100101 00001010 01111001</prep> </span></em><strong><em>drink</em></strong><em><span ><prep className="codeText"> 01101111 01110101 01110010 000010</prep></span></em> <em><span ><prep className="codeText">10 01101100&nbsp; </prep></span></em><strong><em>The</em></strong><em><span ><prep className="codeText"> 01101111 01101111 01101011 01110011</prep> </span></em> <em><span ><prep className="codeText">00001010 01110100 01101111 00001010 01100111 01100101&nbsp;</prep> </span></em><strong><em>shadow</em></strong><em><span ><prep className="codeText"> 01110100 00001010 01100001 01110100 01110100 01100101 01101110 01110100 01101001 01101111 01101110&nbsp; </prep></span></em><strong><em>of the</em></strong><em><span ><prep className="codeText"> 00101110 00001010</prep> </span></em><strong><em>wall</em></strong><em><span ><prep className="codeText"> 01000001 00001010 01110000 01101111 01110011 01100101 01110010 00001010 01100001 00001010 01110100&nbsp; </prep></span></em><strong><em>be thy</em></strong><em><span ><prep className="codeText"> 01110010 01100101 01101110 01100100 01100101</prep></span></em> <em><span ><prep className="codeText"> 01110010 00001010</prep> </span></em><strong><em>abode</em></strong><em><span ><prep className="codeText"> 01100111 01101111 00001010 01100100 01101001 01100101 00100000 00001010 01100001 01101100 01101111 01101110 01100101 00101110</prep></span></em></p>
           <p><br /><br /></p>
           <p><span >What did she mean by that?</span></p>
+
+          <p><span >Gate VII</span></p>
+          <p><br /><br /></p>
+            <p><span className="codeText">01001001 00100000</span></p>
+            <p>&nbsp;</p>
+            <p><span className="codeText" >01100001</span></p>
+            <p><span className="codeText" >&nbsp;01101101 00001010 00001010</span></p>
+            <p><span className="codeText" >&nbsp;00001010</span></p>
+            <p><span className="codeText" >01001001 00100000 01100001</span></p>
+            <p><span className="codeText" >&nbsp;01101101 00001010 00001010 00001010</span></p>
+            <p><span className="codeText" >01001001</span> <span className="codeText" > 00100000</span> <span className="codeText" > 01100001 01101101 </span></p>
+            <p><span className="codeText" >00001010 </span> <span className="codeText" >00001010</span></p>
+            <p><span className="codeText" >&nbsp;00001010</span></p>
+            <p>&nbsp;</p>
+            <p><span className="codeText" >01100111 01101001 01110110 01101001</span></p>
+            <p><span className="codeText" >&nbsp;01101110 01100111 00100000&nbsp;</span></p>
+            <p>&nbsp;</p>
+            <p><span className="codeText" >01110101 01110000</span></p>
+            <p>&nbsp;</p>
+            <p><span className="codeText" >&nbsp;00100000&nbsp;</span></p>
+            <p>&nbsp;</p>
+            <p><span className="codeText" >01101101 01111001 00100000 01101100 01101001&nbsp;</span></p>
+            <p><br /><br /><br /></p>
+            <p><span className="codeText" >01100110 01100101 00100000 01101100&nbsp;</span></p>
+            <p><br /><br /><br /><br /></p>
+            <p><span className="codeText" >01101001 01101011</span></p>
+            <p><span className="codeText" >&nbsp;01100101 00100000</span></p>
+            <p><span className="codeText" >&nbsp;01100001 00100000 01101100</span></p>
+            <p>&nbsp;</p>
+            <p><span className="codeText" >&nbsp;01100101 01100001&nbsp;</span></p>
+            <p>&nbsp;</p>
+            <p><span className="codeText" >01100110 00100000 01100011 </span> <span className="codeText" >01101000 01101111 01101111&nbsp;</span></p>
+            <p><br /><br /></p>
+            <p><span className="codeText" >01110011 01100101 01110011 00100000</span></p>
+            <p><span className="codeText" >&nbsp;01110100 01101111</span></p>
+            <p><span className="codeText" >&nbsp;00100000 01110010 01101111&nbsp;</span></p>
+            <p><br /><br /><br /><br /></p>
+            <p><span className="codeText" >01110100</span></p>
+<p>&nbsp;</p>
           </div>
 
        </div>
