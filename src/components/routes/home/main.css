@@ -1,0 +1,13 @@
+.codeText {
+    background-color: black;
+    color: #20C20E;
+}
+.main {
+    font-weight: normal,
+}
+.mainBold {
+    font-weight: bold,
+}
+.notBold {
+    font-weight: normal
+}
