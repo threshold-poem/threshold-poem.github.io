@@ -31,16 +31,20 @@ export default function HomePage() {
     for(let i = 0; i < elems.length; i++) {
       setTimeout(() => {
         var string = elems[i].textContent;
+        elems[i].style="color: #20C20E";
         var output = string.split('').map(function (char) {
           return char.charCodeAt(0).toString(2);
           }).join(' ');
         elems[i].textContent = output;}
         , 1000);
     } 
+    var elems2 = document.getElementsByClassName("oldBinary");
+    for(let i = 0; i < elems2.length; i++) {
+      elems2[i].style="color: #20C20E";
+    }
   }
 
-  function showID(id) {
-    console.log("TEST")
+  function showID(id) { 
       var x = document.getElementById(id);
       if (x.hidden === true) {
         x.hidden = false;
@@ -50,7 +54,7 @@ export default function HomePage() {
   return (
     <div id="mainDiv" className="main">
       <h1 style={{ fontSize: 30, fontWeigth: 'bold', textAlign: 'center' }}>
-        <span id="title" className="convert" >THRES</span>HOLD - Ryan Cook
+        <span id="title" className="convert" >THRES</span>HOLD - <span className="convert" >Ryan Cook</span>
       </h1>
       <body style={{fontSize: 12, textAlign: 'center'}}>
         <pre style = {{fontSize: 11.5, fontFamily: 'Arial'}}>
@@ -97,7 +101,7 @@ export default function HomePage() {
       <div hidden id="pf" style={{textAlign: 'center',paddingLeft:'25%', paddingRight: '25%'}}>
         <h1><span className="convert" >PRE</span>FACE</h1>
         <h2>1</h2>
-        <h4>Palimpsest; /ˈpaləm(p)ˌsest/; 01010000 01100001 01101100 01101001 01101101 01110000 01110011 01100101 01110011 01110100; <span className="convert" >writing material (such as a </span>parch<span className="convert" >ment or tablet) </span>us<span className="convert" >ed one or more </span>time<span className="convert" >s after earlier writing has been </span>erased<span className="convert" >. The erasing process wasn't </span>co<span className="convert" >mpletely</span> </h4>
+        <h4>Palimpsest; /ˈpaləm(p)ˌsest/; <span className="oldBinary" >01010000 01100001 01101100 01101001 01101101 01110000 01110011 01100101 01110011 01110100;</span> <span className="convert" >writing material (such as a </span>parch<span className="convert" >ment or tablet) </span>us<span className="convert" >ed one or more </span>time<span className="convert" >s after earlier writing has been </span>erased<span className="convert" >. The erasing process wasn't </span>co<span className="convert" >mpletely</span> </h4>
         <h4 style={{textAlign: 'left', paddingLeft:'25%'}}>
           <pre>
           <div style={{paddingLeft:'15%'}}><span className="convert" >Effect</span>ive</div>
@@ -112,7 +116,7 @@ under <span className="convert" >the newer </span>writing.<br />
         <Button onClick={() => {
                         showID("2");
                       }}id="c">identity.</Button>
-        <h4>Palimpcest-/ˈpaləm(p)ˌcest/; 01110000 01100001 01101100 01101001 01101101 01110000 01100011 01100101 01110011 01110100 ; othering the ecosystem within an arranged work to further explore the genetic code within language. Not quite erasure is necessary, merely focusing through translation.</h4>
+        <h4>Palimpcest-/ˈpaləm(p)ˌcest/; <span className="oldBinary" >01110000 01100001 01101100 01101001 01101101 01110000 01100011 01100101 01110011 01110100</span> ; othering the ecosystem within an arranged work to further explore the genetic code within language. Not quite erasure is necessary, merely focusing through translation.</h4>
       </div>
       
 
@@ -182,20 +186,20 @@ under <span className="convert" >the newer </span>writing.<br />
           <p><span ><span className="convert" >born to </span>dissent&nbsp;</span></p>
           <p><span ><span className="convert" >Lovely wine-stained picnic</span> interrupted&mdash;</span></p>
           <p><span >Gender <span className="convert" >revealed in a mouth of</span> ash</span></p>
-          <p><span >It&rsquo;s a 01100010 01101111 01111001 00100000 00001010 <span className="convert" >\(That will be 759 plus tax)</span></span></p>
+          <p><span >It&rsquo;s a <span className="oldBinary" >01100010 01101111 01111001 00100000 00001010</span> <span className="convert" >\(That will be 759 plus tax)</span></span></p>
           <p>&nbsp;</p>
           <p><span >Gate II</span></p>
           <p><span >No,&nbsp;</span></p>
-          <p><span >I 01100011 01100001 01101110 01101110 01101111 01110100&nbsp; 00100000 00001010</span></p>
+          <p><span >I <span className="oldBinary" >01100011 01100001 01101110 01101110 01101111 01110100&nbsp; 00100000 00001010</span></span></p>
           <p>&nbsp;</p>
           <p><span >think <span className="convert" >about it</span> now, I <span className="convert" >have to</span> keep going.</span></p>
           <p><br /><br /></p>
           <p><span >Gate III.</span></p>
           <p>&nbsp;</p>
           <p><span >&nbsp;<span className="convert" >I </span>seduce<span className="convert" >d</span> with the space<span className="convert" >s between.</span></span></p>
-          <p><span >&nbsp;&nbsp;01101000 01100001 01101110 01100100 makes me feel 01101000 01100001 01110010 01100100&nbsp; 00100000 00001010 when you touch&nbsp; 01101101 01111001 00100000 01101110 01100101 01100011 01101011 00100000 00001010&nbsp; .</span></p>
+          <p><span >&nbsp;&nbsp;<span className="oldBinary" >01101000 01100001 01101110 01100100</span> makes me feel<span className="oldBinary" > 01101000 01100001 01110010 01100100&nbsp; 00100000 00001010</span> when you touch&nbsp; <span className="oldBinary" >01101101 01111001 00100000 01101110 01100101 01100011 01101011 00100000 00001010</span>&nbsp; .</span></p>
           <p><br /><br /></p>
-          <p><span >I cannot <span className="convert" >tell if</span> 01110011 01101000 01100101 <span className="convert" >liked</span> me <span className="convert" >or how </span>much <span className="convert" >she could</span> 01100011 01100001 01100111 01100101 00001010 00001010 <span className="convert" >into me.Digging</span> up clay<span className="convert" > and</span> hair<span className="convert" > and </span>lead. Filling <span className="convert" >my</span></span></p>
+          <p><span >I cannot <span className="convert" >tell if</span> <span className="oldBinary" >01110011 01101000 01100101</span> <span className="convert" >liked</span> me <span className="convert" >or how </span>much <span className="convert" >she could</span> <span className="oldBinary" >01100011 01100001 01100111 01100101 00001010 00001010 </span><span className="convert" >into me.Digging</span> up clay<span className="convert" > and</span> hair<span className="convert" > and </span>lead. Filling <span className="convert" >my</span></span></p>
           <p><span >&nbsp;01100010 01101111 01100100 01111001 00001010 00001010 00001010 00001010 00001010</span></p>
           <p><span >&nbsp;<span className="convert" >up as</span> she<span className="convert" > would the </span>flask<span className="convert" > that brings you back.</span>&nbsp;</span></p>
           <p>&nbsp;</p>
@@ -204,24 +208,25 @@ under <span className="convert" >the newer </span>writing.<br />
           <p><span >Taste<span className="convert" >s a lot like cheap gin.</span>&nbsp;</span></p>
           <p><br /><br /><br /><br /></p>
           <p><span >Gate V</span></p>
-          <p><span >I do not know <span className="convert" >why</span> you<span className="convert" > got trapped for</span>&nbsp; 00001010&nbsp; 01101000 01101001 01101101,<span className="convert" > The dawn doesn&rsquo;t </span>debate the ethics<span className="convert" > of breaking.</span></span></p>
+          <p><span >I do not know <span className="convert" >why</span> you<span className="convert" > got trapped for</span>&nbsp; <span className="oldBinary" >00001010&nbsp; 01101000 01101001 01101101,</span><span className="convert" > The dawn doesn&rsquo;t </span>debate the ethics<span className="convert" > of breaking.</span></span></p>
           <p><br /><br /></p>
           <p><span ><span className="convert" >Get your clothes</span> back on.</span></p>
           <p><br /><br /><br /><br /></p>
           <p><span >Gate VI</span></p>
           <p><span >&nbsp;Erishkegal<span className="convert" > said:</span>&nbsp;</span></p>
           <p>&nbsp;</p>
-          <p><span >00100000 00100000 01111001 01101111 01110101 00001010 00100000 01110111 01101001 01101100 01101100 00100000 </span><strong><em>The</em></strong> <span >&nbsp;00001010 01100001 01101100 01110111 01100001 01111001 01110011 00001010 00100000 01100010 01100101 00001010 </span><strong><em>sweepings</em></strong><span > 00100000 01100001 00100000 01100111 01110101 01111001 00100000 00001010 01101001 01101110 00100000 01100001 </span><strong><em>of the</em></strong> <span >&nbsp;00100000</span></p>
-          <p><span >&nbsp;01100100 01110010 </span> <span >01100101 01110011 01110011 00101100 00100000 </span><strong><em>gutter</em></strong> <span >00001010 01111001 01101111 01110101 00001010 00100000 01110011 01101001 01101100 01101100 01111001&nbsp; </span><strong><em>of the </em></strong><span >00001010 00100000 01101100 01101001 01110100 01110100 01101100 01100101 00001010 00100000 01100110 01100001 01100111 01100111 01101111&nbsp;</span></p>
-          <p><span >01110100 00001010 00100000 01110100 01110010 01111001 </span><strong><em>city</em></strong><span > 01101001 01101110 01100111 00100000 00001010</span> <span > 01110100 01101111 00100000 01110100 01110010 01101001 01100011&nbsp; </span><strong><em>be thy</em></strong> <span >01101011 00100000 01101101 01100101 00101100 00001010 00100000 01001001 00100000 01101000 01101111 01110000 01100101 00001010 00100000 01111001 01101111 01110101 00001010 00100000 01100100 01101001 01100101 00100000</span> <span > 00001010 01110011 01101100 01101111 </span> <span >01110111 01101100 01111001 00101110 00001010 00100000 01011001 01101111 01110101 00001010 00100000 01100010 01100101 </span><strong><em>food</em></strong><span > 01110100 01110100 01100101 01110010 00001010 00100000 01101110 01101111 01110100 00001010 00100000 01100011 01101111 01101101 01100101 00001010 00100000 01100010 01100001 01100011 01101011 00001010 00100000 01101000 01100101 01110010 01100101 00100000 00001010 00100000 01100001 01100111 01100001 01101001 01101110 00001010 00100000 01110111 01101001 01110100 01101000 00100000 00001010 01110100 01101000 01100001 01110100 00100000 00001010 01110011 01101000 01101001 01110100 00101110 00100000</span></p>
+          <p><span ><span className="oldBinary" >00100000 00100000 01111001 01101111 01110101 00001010 00100000 01110111 01101001 01101100 01101100 00100000</span></span><strong><em>The</em></strong> <span >&nbsp;<span className="oldBinary" >00001010 01100001 01101100 01110111 01100001 01111001 01110011 00001010 00100000 01100010 01100101 00001010 </span></span><strong><em>sweepings</em></strong><span > <span className="oldBinary" >00100000 01100001 00100000 01100111 01110101 01111001 00100000 00001010 01101001 01101110 00100000 01100001</span> </span><strong><em>of the</em></strong> <span >&nbsp;<span className="oldBinary" >00100000</span></span></p>
+          <p><span >&nbsp;<span className="oldBinary" >01100100 01110010 </span> <span >01100101 01110011 01110011 00101100 00100000 </span></span><strong><em>gutter</em></strong> <span ><span className="oldBinary" >00001010 01111001 01101111 01110101 00001010 00100000 01110011 01101001 01101100 01101100 01111001&nbsp; </span></span><strong><em>of the </em></strong><span ><span className="oldBinary" >00001010 00100000 01101100 01101001 01110100 01110100 01101100 01100101 00001010 00100000 01100110 01100001 01100111 01100111 01101111</span>&nbsp;</span></p>
+          <p><span ><span className="oldBinary" >01110100 00001010 00100000 01110100 01110010 01111001 </span></span><strong><em>city</em></strong><span > <span className="oldBinary" >01101001 01101110 01100111 00100000 00001010</span></span> <span ><span className="oldBinary" > 01110100 01101111 00100000 01110100 01110010 01101001 01100011&nbsp; </span></span><strong><em>be thy</em></strong> <span ><span className="oldBinary" >01101011 00100000 01101101 01100101 00101100 00001010 00100000 01001001 00100000 01101000 01101111 01110000 01100101 00001010 00100000 01111001 01101111 01110101 00001010 00100000 01100100 01101001 01100101 00100000</span></span> <span > <span className="oldBinary" >00001010 01110011 01101100 01101111</span> </span> <span ><span className="oldBinary" >01110111 01101100 01111001 00101110 00001010 00100000 01011001 01101111 01110101 00001010 00100000 01100010 01100101</span> </span><strong><em>food</em></strong><span ><span className="oldBinary" > 01110100 01110100 01100101 01110010 00001010 00100000 01101110 01101111 01110100 00001010 00100000 01100011 01101111 01101101 01100101 00001010 00100000 01100010 01100001 01100011 01101011 00001010 00100000 01101000 01100101 01110010 01100101 00100000 00001010 00100000 01100001 01100111 01100001 01101001 01101110 00001010 00100000 01110111 01101001 01110100 01101000 00100000 00001010 01110100 01101000 01100001 01110100 00100000 00001010 01110011 01101000 01101001 01110100 00101110 00100000</span></span></p>
           <p><em><span >&ldquo;<span className="convert" >The sweepings of the gutter of the city be thy food.</span></span></em></p>
           <p><em><span >&nbsp;<span className="convert" >The drains of the city be thy drink. The shadow of the wall be thy abode&rdquo;</span></span></em></p>
-          <p><em><span >01111001 </span></em><strong><em>The</em></strong><em><span > 01101111 01110101 00001010 00100000 01100001 01110010 01100101 01101110 00100111 01110100 00001010 00100000 </span></em> <em><span >01100101 01110110 </span></em><strong><em>drains</em></strong><em><span > 01100101 01101110 00001010 00100000 01100001 00100000&nbsp; </span></em><strong><em>of the</em></strong><em><span > 00001010 01110010 01100101 01100001 01101100 00001010 00100000 01100111 01101001 01110010 </span></em><strong><em>city</em></strong><em><span > 01101100 00101100 00001010 00001010 01111001 01101111 01110101 00100000 00001010 01100110 01100001 </span></em><strong><em>be thy</em></strong><em><span >&nbsp; 01101011 01100101 00001010 01111001 </span></em><strong><em>drink</em></strong><em><span > 01101111 01110101 01110010 000010</span></em> <em><span >10 01101100&nbsp; </span></em><strong><em>The</em></strong><em><span > 01101111 01101111 01101011 01110011 </span></em> <em><span >00001010 01110100 01101111 00001010 01100111 01100101&nbsp; </span></em><strong><em>shadow</em></strong><em><span > 01110100 00001010 01100001 01110100 01110100 01100101 01101110 01110100 01101001 01101111 01101110&nbsp; </span></em><strong><em>of the</em></strong><em><span > 00101110 00001010 </span></em><strong><em>wall</em></strong><em><span > 01000001 00001010 01110000 01101111 01110011 01100101 01110010 00001010 01100001 00001010 01110100&nbsp; </span></em><strong><em>be thy</em></strong><em><span > 01110010 01100101 01101110 01100100 01100101</span></em> <em><span > 01110010 00001010 </span></em><strong><em>abode</em></strong><em><span > 01100111 01101111 00001010 01100100 01101001 01100101 00100000 00001010 01100001 01101100 01101111 01101110 01100101 00101110</span></em></p>
+          <p><em><span ><span className="oldBinary" >01111001 </span></span></em><strong><em>The</em></strong><em><span > <span className="oldBinary" >01101111 01110101 00001010 00100000 01100001 01110010 01100101 01101110 00100111 01110100 00001010 00100000 </span></span></em> <em><span ><span className="oldBinary" >01100101 01110110</span> </span></em><strong><em>drains</em></strong><em><span ><span className="oldBinary" > 01100101 01101110 00001010 00100000 01100001 00100000</span>&nbsp; </span></em><strong><em>of the</em></strong><em><span > <span className="oldBinary" >00001010 01110010 01100101 01100001 01101100 00001010 00100000 01100111 01101001 01110010</span> </span></em><strong><em>city</em></strong><em><span ><span className="oldBinary" > 01101100 00101100 00001010 00001010 01111001 01101111 01110101 00100000 00001010 01100110 01100001</span> </span></em><strong><em>be thy</em></strong><em><span >&nbsp; <span className="oldBinary" >01101011 01100101 00001010 01111001</span> </span></em><strong><em>drink</em></strong><em><span ><span className="oldBinary" > 01101111 01110101 01110010 000010</span></span></em> <em><span ><span className="oldBinary" >10 01101100</span>&nbsp; </span></em><strong><em>The</em></strong><em><span ><span className="oldBinary" > 01101111 01101111 01101011 01110011</span> </span></em> <em><span ><span className="oldBinary" >00001010 01110100 01101111 00001010 01100111 01100101</span>&nbsp; </span></em><strong><em>shadow</em></strong><em><span ><span className="oldBinary" > 01110100 00001010 01100001 01110100 01110100 01100101 01101110 01110100 01101001 01101111 01101110</span>&nbsp; </span></em><strong><em>of the</em></strong><em><span ><span className="oldBinary" > 00101110 00001010</span> </span></em><strong><em>wall</em></strong><em><span > <span className="oldBinary" >01000001 00001010 01110000 01101111 01110011 01100101 01110010 00001010 01100001 00001010 01110100</span>&nbsp; </span></em><strong><em>be thy</em></strong><em><span ><span className="oldBinary" > 01110010 01100101 01101110 01100100 01100101</span></span></em> <em><span > <span className="oldBinary" >01110010 00001010 </span></span></em><strong><em>abode</em></strong><em><span ><span className="oldBinary" > 01100111 01101111 00001010 01100100 01101001 01100101 00100000 00001010 01100001 01101100 01101111 01101110 01100101 00101110</span></span></em></p>
           <p><br /><br /></p>
           <p><span ><span className="convert" >What </span>did she mean <span className="convert" >by</span> that?</span></p>
 
           <p><span >Gate VII</span></p>
           <p><br /><br /></p>
+          <span className="oldBinary" >
             <p><span >01001001 00100000</span></p>
             <p>&nbsp;</p>
             <p><span  >01100001</span></p>
@@ -257,6 +262,7 @@ under <span className="convert" >the newer </span>writing.<br />
             <p><span  >&nbsp;00100000 01110010 01101111&nbsp;</span></p>
             <p><br /><br /><br /><br /></p>
             <p><span  >01110100</span></p>
+          </span>
 <p>&nbsp;</p>
           </div>
           <Button id="gateButton" onClick={() => {convertBinary();}}>
