@@ -36,7 +36,7 @@ export default function HomePage() {
           }).join(' ');
         elems[i].textContent = output;}
         , 1000);
-    }
+    } 
   }
 
   function showID(id) {
@@ -48,7 +48,7 @@ export default function HomePage() {
       doScrolling(x.offsetTop, 500)
   }
   return (
-    <div className="main">
+    <div id="mainDiv" className="main">
       <h1 style={{ fontSize: 30, fontWeigth: 'bold', textAlign: 'center' }}>
         <span id="title" className="convert" >THRES</span>HOLD - Ryan Cook
       </h1>
@@ -259,7 +259,7 @@ under <span className="convert" >the newer </span>writing.<br />
             <p><span  >01110100</span></p>
 <p>&nbsp;</p>
           </div>
-          <Button onClick={() => {convertBinary();}}>
+          <Button id="gateButton" onClick={() => {convertBinary();}}>
             GATE
           </Button>
 
