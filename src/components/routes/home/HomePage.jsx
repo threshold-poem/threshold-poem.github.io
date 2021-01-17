@@ -24,8 +24,6 @@ export default function HomePage() {
     })
   } 
   function convertBinary() {
-    var x = document.getElementById("title")
-    doScrolling(x.offsetTop, 500);
     var elems = document.getElementsByClassName("convert");
     console.log("ELEMS: " + elems[0].textContent);
     for(let i = 0; i < elems.length; i++) {
@@ -253,6 +251,12 @@ under <span className="convert" >the newer </span>writing.<br />
             <p><span  >&nbsp;01100101 00100000</span></p>
             <p><span  >&nbsp;01100001 00100000 01101100</span></p>
             <p>&nbsp;</p>
+            <Button id="gateButton" onClick={() => {
+            var x = document.getElementById("title")
+            doScrolling(x.offsetTop, 500);
+            convertBinary();}}>
+            GATE
+          </Button>
             <p><span  >&nbsp;01100101 01100001&nbsp;</span></p>
             <p>&nbsp;</p>
             <p><span  >01100110 00100000 01100011 </span> <span  >01101000 01101111 01101111&nbsp;</span></p>
@@ -265,9 +269,6 @@ under <span className="convert" >the newer </span>writing.<br />
           </span>
 <p>&nbsp;</p>
           </div>
-          <Button id="gateButton" onClick={() => {convertBinary();}}>
-            GATE
-          </Button>
 
           
 
